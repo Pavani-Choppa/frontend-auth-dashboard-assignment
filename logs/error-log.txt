@@ -1,0 +1,12 @@
+============ Error Log ============
+
+No critical errors encountered during development.
+
+Handled cases:
+- Invalid login credentials → 400 handled gracefully
+- Missing auth token → 401 Unauthorized
+- DB validation errors responded with JSON message
+
+Application running stable ✔
+
+===================================

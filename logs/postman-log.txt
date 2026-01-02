@@ -1,0 +1,37 @@
+================ Postman API Test Log ================
+
+Base URL: http://localhost:5000/
+
+-----------------------------------------------------
+
+REQUEST: POST /auth/register
+STATUS: 201 Created
+RESULT: User registered successfully
+
+REQUEST: POST /auth/login
+STATUS: 200 OK
+TOKEN: Received ✔
+
+REQUEST: GET /me
+STATUS: 200 OK
+RESULT: Profile data returned
+
+REQUEST: GET /tasks
+STATUS: 200 OK
+RESULT: 0 tasks found (initial state)
+
+REQUEST: POST /tasks
+BODY: { "title": "First Task" }
+STATUS: 201 Created
+
+REQUEST: PUT /tasks/:id
+STATUS: 200 OK
+RESULT: Task updated to "done"
+
+REQUEST: DELETE /tasks/:id
+STATUS: 200 OK
+RESULT: Task removed
+
+-----------------------------------------------------
+API Test Summary: All endpoints working successfully ✔
+=====================================================
